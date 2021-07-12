@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hell World! sem copiar e colar</title>
+</head>
+<body>
+    <h1 id="d1"></h1>
+    <p id="p1"></p>
+
+    <script>
+        const newElement = document.createElement("h1");
+
+        newElement.className = 'h1';
+        newElement.style.color = 'red'
+        
+        const newText = document.createTextNode("Hello World!");
+
+        newElement.appendChild(newText);
+
+        const destination = document.getElementById('d1');
+        destination.appendChild(newElement);
+    </script>
+</body>
+</html>
